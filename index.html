@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QRIS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e10000, #ffd000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .logos img {
+      height: 30px;
+    }
+
+    h2 {
+      color: #e10000;
+      margin: 15px 0;
+      font-size: 1.5rem;
+    }
+
+    .qrcode {
+      margin: 20px 0;
+    }
+
+    .qrcode img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+
+    .accepted {
+      margin: 10px 0 5px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .platforms {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    .platforms img {
+      height: 20px;
+      width: auto;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: black;
+    }
+
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 1.25rem;
+      }
+      .logos img {
+        height: 25px;
+      }
+      .platforms img {
+        height: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo_QRIS.svg/1280px-Logo_QRIS.svg.png" alt="QRIS" />
+      <!---<img src="https://cdn.jsdelivr.net/gh/ambontv/ambontv.github.io@main/img/amq.png" alt="AmbonTV" /> --->
+    </div>
+    <h2>Scan untuk Bayar</h2>
+    <div class="qrcode">
+      <img src="qris.png" alt="QR Code" />
+    </div>
+    <div class="accepted">Kode QR diterima</div>
+    <div class="platforms">
+      <img src="https://shopeepay.co.id/src/pages/home/assets/images/new-homepage/new-spp-logo.svg" alt="ShopeePay" />
+      <img src="https://bitt.my.id/logo/dana.png" alt="Dana" />
+      <img src="https://bitt.my.id/logo/ovo.png" alt="OVO" />
+      <img src="https://bitt.my.id/logo/gopay.png" alt="Gopay" />
+    </div>
+
+    <div class="note">dan platform lain yang mendukung QRIS</div>
+
+  </div>
+</body>
+</html>
